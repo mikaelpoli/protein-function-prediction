@@ -1,0 +1,4 @@
+filename	ns	tau	n	tp	fp	fn	pr	rc	cov	mi	ru	f	s	pr_micro	rc_micro	f_micro	cov_max
+submission_0.3.tsv	biological_process	0.310	675.000	14.570	13.800	15.996	0.567	0.540	1.000	13.800	15.996	0.553	21.126	0.514	0.477	0.494	1.000
+submission_0.3.tsv	cellular_component	0.440	679.000	8.133	3.475	4.339	0.744	0.713	0.984	3.475	4.339	0.728	5.559	0.701	0.652	0.675	1.000
+submission_0.3.tsv	molecular_function	0.380	421.000	5.595	1.664	3.573	0.822	0.663	0.942	1.664	3.573	0.734	3.941	0.771	0.610	0.681	1.000
