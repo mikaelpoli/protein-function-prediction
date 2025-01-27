@@ -107,8 +107,8 @@ We tested our approach at different levels of $\alpha$ to see how it would perfo
   - predictions
 
 The predictions we tested with *cafaeval* are in `predictions`, `eval` contains the *cafaeval* output .tsv files, and `plots` contains F-score plots, one for each GO aspect.
-
-
+### What if I'm your professor?
+You'll find our predictions for the original test set in a .tsv file named `submission.tsv` in the `results/submission directory`.
 
 
 
