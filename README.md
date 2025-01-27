@@ -99,14 +99,13 @@ Run the `main.ipynb` notebook in its entirety. Training for each of the three ML
 ### What's in `src`?
 Aside from predefined Python libraries, we built our own custom ones: they're in the `src` directory. We've imported them in the "Setup" section of out notebooks. `src` contains the `.py` files. If you want to open them in Google Colab, you'll find the `.ipynb` notebooks we used to generate them in `src-notebooks`.
 ### What's in `results`?
-We tested our approach at different levels of $\alpha$ to see how it would perform - this is where the results are. Each $\alpha$ we tested has a separate directory structued like so:  
+We tested our approach at different levels of $\alpha$ to see how it would perform—this is where the results are. Each $\alpha$ we tested has a separate directory structued like so:  
 
 [root. (e.g., test-alpha-0.0)]  
   - eval  
-  - plots
   - predictions
 
-The predictions we tested with *cafaeval* are in `predictions`, `eval` contains the *cafaeval* output .tsv files, and `plots` contains F-score plots, one for each GO aspect.
+The predictions we tested with *cafaeval* are in `predictions`, while `eval` contains the *cafaeval* output .tsv files.
 ### What if I'm your professor?
 You'll find our predictions for the original test set in a .tsv file named `submission.tsv` in the `results/submission directory`.
 
