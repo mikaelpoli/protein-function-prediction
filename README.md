@@ -12,14 +12,8 @@ We strongly suggest reading the report first in order to contextualize this repo
 
 We also tested an alternative approach that integrates BLAST results during MLP training using TF-IDF (term frequency–inverse document frequency). The repo for this approach, as well as the workflow for obtaining the BLAST results we integrated in both our methods, can be found [here](https://github.com/biosaio/Function-Prediction.git).
 
-## Project directory structure
+## Project repo structure
 [root.]
-  - data/
-    - custom/
-      - test
-      - train
-    - test
-    - train
   - models
   - results/
     - evaluations/
@@ -45,8 +39,54 @@ cafaeval.ipynb
 main.ipynb
 
 ## How to run
+### Download data
+Download the datasets from [MEGA](https://mega.nz/folder/gCkgDSDS#cetVnor0kUDwEAUtjnb1Kg). The directory has this structure:  
+
+[root.]
+  - data/
+    - custom/
+      - test
+      - train
+    - test
+    - train
+### Download repo
+Download this repo and ***rename it to `pfp`***. This is very important, as `pfp` is the name of the root directory in the configuration file. If you don't want to rename the folder, or you choose to rename it to something else, you will need to manually edit the `config.yaml` file to account for the new name, or the notebooks won't work properly.
+### Merge
+Add the `data` folder to the `pfp` folder. The final structure of the `pfp` folder should be:  
+
+[root.]  
+  - **data/**  
+    - **custom/**  
+      - **test**  
+      - **train**  
+    - **test**  
+    - **train**  
+  - models
+  - results/
+    - evaluations/
+      - test-alpha-0.0/
+      - test-alpha-0.1/
+      - test-alpha-0.2/
+      - test-alpha-0.3/
+      - test-alpha-0.4/
+      - test-alpha-0.5/
+      - test-alpha-0.6/
+      - test-alpha-0.7/
+      - test-alpha-0.8/
+      - test-alpha-0.9/
+      - test-alpha-1.0/
+    - plots
+    - submission/
+      - submission.tsv
+  - src
+  - src-notebooks  
+config.yaml  
+custom-dataset-builder.ipynb  
+cafaeval.ipynb  
+main.ipynb
+
 ### Upload to Google Drive
-Download the project's repo and upload it to your Google Drive in the main "My Drive" section. ***Rename the folder as `pfp`***. This is very important, as `pfp` is the name of the root directory in the configuration file. If you don't want to rename the folder, or you choose to rename it to something else, you will need to manually edit the `config.yaml` file to account for the new name, or the notebooks won't work properly.
+Upload the whole directory to your Google Drive in the `My Drive` section.
 ### Understanding the `ipynb` notebooks and choosing what to run
 The root directory contains three `.ipynb` notebooks: one main one, and two supplementary ones.
 - *Main*
