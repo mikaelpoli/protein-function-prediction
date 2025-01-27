@@ -4,7 +4,7 @@ Predicting functional GO annotations given ProtT5 embeddings and BLAST results.
 ## Overview
 This project was developed by [Flavio Agostini](https://github.com/biosaio), [Mikael Poli](https://github.com/mikaelpoli), and [Emanuele Quaglio](https://github.com/emanuele-quaglio) as their final exam for the Biological Data course at the University of Padova.   
 
-We strongly suggest reading the report first in order to contextualize this repo, but essentially:
+We strongly suggest reading the [report](https://github.com/mikaelpoli/protein-function-prediction/blob/main/report.pdf) first in order to contextualize this repo, but essentially:
 - Given a dataset containing 123,969 proteins, their ProtT5 embeddings, and their GO annotations, we built our own training and test sets, and trained three MLP models (one for each GO aspect) to learn association patterns between ProtT5 embeddings and GO terms;
 - We also used BLAST matches to transfer GO annotations from the proteins in the training set to those in the test set independently of the MLP models;
 - We merged the two types of predictions, weighing the MLP's contribution through an $\alpha$ coefficient;
