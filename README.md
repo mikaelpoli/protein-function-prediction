@@ -2,7 +2,7 @@
 Predicting functional GO annotations given ProtT5 embeddings and BLAST results.
 
 ## Overview
-This project was developed by Flavio Agostini, Mikael Poli, and Emanuele Quaglio as their final exam for the Biological Data course at the University of Padova.   
+This project was developed by [Flavio Agostini](https://github.com/biosaio), [Mikael Poli](https://github.com/mikaelpoli), and [Emanuele Quaglio](https://github.com/emanuele-quaglio) as their final exam for the Biological Data course at the University of Padova.   
 
 We strongly suggest reading the report first in order to contextualize this repo, but essentially:
 - Given a dataset containing 123,969 proteins, their ProtT5 embeddings, and their GO annotations, we built our own training and test sets, and trained three MLP models (one for each GO aspect) to learn association patterns between ProtT5 embeddings and GO terms;
@@ -87,7 +87,7 @@ main.ipynb
 
 ### Upload to Google Drive
 Upload the whole directory to your Google Drive in the `My Drive` section.
-### Understanding the `ipynb` notebooks and choosing what to run
+### Understanding the `.ipynb` notebooks and choosing what to run
 The root directory contains three `.ipynb` notebooks: one main one, and two supplementary ones.
 - *Main*
    - `main.ipynb`: where it all comes together. As the name suggests, this is the main notebook containing the whole project pipeline, from loading the data to training the models to predicting protein function. This is what you want to run to reproduce model training for the post hoc approach. Since the integration of BLAST results doesn't require any training, the only training you may want to replicate is the one for the MLP models. But you can always try different integrations of BLAST results by changing initializing the scores to a different value in the `calculate_blast_based_scores()` function and changing the alpha value in the `update_predictions()` function!
