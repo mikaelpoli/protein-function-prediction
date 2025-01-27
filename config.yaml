@@ -1,0 +1,57 @@
+paths:
+  train_set: "/content/drive/MyDrive/pfp/data/train/train_set.tsv"
+  go_obo: "/content/drive/MyDrive/pfp/data/train/go-basic.obo"
+  train_ids: "/content/drive/MyDrive/pfp/data/train/train_ids.txt"
+  train_fasta: "/content/drive/MyDrive/pfp/data/train/train.fasta"
+  train_embeddings: "/content/drive/MyDrive/pfp/data/train/train_embeddings.h5"
+  train_protein2ipr: "/content/drive/MyDrive/pfp/data/train/train_protein2ipr.dat"
+  test_ids: "/content/drive/MyDrive/pfp/data/test/test_ids.txt"
+  test_fasta: "/content/drive/MyDrive/pfp/data/test/test.fasta"
+  test_embeddings: "/content/drive/MyDrive/pfp/data/test/test_embeddings.h5"
+  test_protein2ipr: "/content/drive/MyDrive/pfp/data/test/test_protein2ipr.dat"
+  test_blast: "/content/drive/MyDrive/pfp/data/test/blast_test_results.tsv"
+  train_blast: "/content/drive/MyDrive/pfp/data/custom/train/train_blast.tsv"
+  custom_test_set: "/content/drive/MyDrive/pfp/data/custom/test/custom_test_set.tsv"
+  custom_test_embeddings: "/content/drive/MyDrive/pfp/data/custom/test/custom_test_embeddings.h5"
+  custom_test_ids: "/content/drive/MyDrive/pfp/data/custom/test/custom_test_ids.tsv"
+  custom_test_indices: "/content/drive/MyDrive/pfp/data/custom/test/custom_test_indices.tsv"
+  custom_test_ground_truth: "/content/drive/MyDrive/pfp/data/custom/test/custom_test_ground_truth.tsv"
+  custom_train_set: "/content/drive/MyDrive/pfp/data/custom/train/custom_train_set.tsv"
+  custom_train_embeddings: "/content/drive/MyDrive/pfp/data/custom/train/custom_train_embeddings.h5"
+  custom_train_ids: "/content/drive/MyDrive/pfp/data/custom/train/custom_train_ids.tsv"
+  custom_train_indices: "/content/drive/MyDrive/pfp/data/custom/train/custom_train_indices.tsv"
+
+parameters:
+  RANDOM_SEED: 42
+  DOMAINS_COLS: ['protein_id','ipr_id','desc','db','start','end']
+  BLAST_COLS: ["query", "target", "bits", "evalue", "score"]
+  EPOCHS: 50
+  BATCH_SIZE: 32
+  NUM_HIDDEN:
+    mf: 10
+    bp: 10
+    cc: 10
+  SIZE_HIDDEN:
+    mf: 300
+    bp: 300
+    cc: 300
+  ACTIVATION:
+    mf: leaky_relu
+    bp: leaky_relu
+    cc: leaky_relu
+  ALPHA:
+    mf: 0.05
+    bp: 0.05
+    cc: 0.05
+  LR:
+    mf: 0.01
+    bp: 0.01
+    cc: 0.01
+  DROPOUT:
+    mf: 0.2
+    bp: 0.3
+    cc: 0.2
+  MODEL_TYPE:
+    mf: fixed
+    bp: fixed
+    cc: fixed
