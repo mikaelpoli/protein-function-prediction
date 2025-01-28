@@ -99,7 +99,7 @@ Run the `main.ipynb` notebook in its entirety. Training for each of the three ML
 ### What's in `src`?
 Aside from predefined Python libraries, we built our own custom ones: they're in the `src` directory. We've imported them in the "Setup" section of out notebooks. `src` contains the `.py` files. If you want to open them in Google Colab, you'll find the `.ipynb` notebooks we used to generate them in `src-notebooks`.
 ### What's in `results`?
-We tested our approach at different levels of $\alpha$ to see how it would perform—this is where the results are. Each $\alpha$ we tested has a separate directory structued like so:  
+We tested our approach at different levels of $\alpha$ to see how it would perform—this is where the results are. Each $\alpha$ we tested has a separate directory structured like so:  
 
 [root. (e.g., test-alpha-0.0)]  
   - eval  
